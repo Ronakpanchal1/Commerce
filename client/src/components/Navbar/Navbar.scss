@@ -1,0 +1,93 @@
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.207);
+
+    .wrapper {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        width: 100%;
+        align-items: center;
+        background-color: #00c9a4; 
+        background-color: #4cd4bb;
+        background-color: #39b09a;
+        color: rgb(170, 170, 170); 
+        color: #eeeeee; 
+        
+        .item {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+
+            img {
+                height: 25px;
+                width: 25px;
+                object-fit: cover;
+                border-radius: 50%;
+
+                &:hover {
+                    outline: 1px solid #0202a1;
+                    outline-offset: 1.5px;
+
+                }
+            }
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            // border: 1px solid #0202a1;
+        }
+
+        .center {
+            font-size: 30px;
+            letter-spacing: 2px;
+
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            // border: 1px solid #0202a1;
+
+            .icons {
+                display: flex;
+                gap: 15px;
+                color: #777;
+                color: #00ffde;
+                cursor: pointer;
+
+                .cartIcon {
+                    position: relative;
+                    margin-right: 10px;
+
+                    span {
+                        position: absolute;
+                        right: -10px;
+                        top: -10px;
+                        font-size: 12px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #2879fe;
+                        color: white;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                }
+            }
+        }
+    }
+}
